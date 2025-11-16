@@ -1,0 +1,48 @@
+{
+  "name": "x-like-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate": "tsx scripts/migrate.ts",
+    "db:test": "tsx scripts/test-db.ts",
+    "db:verify": "tsx scripts/verify-tables.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
+    "prisma:db:pull": "prisma db pull",
+    "prisma:test": "tsx scripts/test-prisma.ts",
+    "db:reset": "tsx scripts/reset-db.ts",
+    "db:show": "tsx scripts/show-tables.ts",
+    "db:add-userid": "tsx scripts/add-userid-column.ts",
+    "db:migrate-provider": "tsx scripts/migrate-to-provider-field.ts"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.11.1",
+    "@neondatabase/serverless": "^0.9.0",
+    "@prisma/client": "^6.19.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.6.1",
+    "lucide-react": "^0.344.0",
+    "next": "^14.2.5",
+    "next-auth": "^4.24.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "postcss": "^8.4.39",
+    "prisma": "^6.19.0",
+    "tailwindcss": "^3.4.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.3"
+  }
+}
